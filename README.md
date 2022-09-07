@@ -4,17 +4,17 @@
 ### **Формат входных данных**
 **categories_tree.csv** - файл с деревом категорий на маркетплейсе. У каждой категории есть id, заголовок и parent_id, по которому можно восстановить полный путь категории.
 
-**train.parquet** - файл с товарами на маркетплейсе. 
+`train.parquet` - файл с товарами на маркетплейсе. 
 У каждого товара есть:
 - *id* - идентификатор товара
-- *title - заголовок*
-- *short_description - краткое описание*
-- *name_value_characteristics - название:значение* характеристики товара, может быть несколько для одного товара и для одной характеристики. Пример: `name1: value1 | value2 | valueN_1 / name2: value1 | value2 | valueN_2 / nameK: value1 | value2 | valueN_K`
-- *rating - средний рейтинг товара*
-- *feedback_quantity - количество отзывов по товару*
-- *category_id - категория товара(таргет)*
+- *title* - заголовок
+- *short_description* - краткое описание
+- *name_value_characteristics* - название:значение* характеристики товара, может быть несколько для одного товара и для одной характеристики. Пример: `name1: value1 | value2 | valueN_1 / name2: value1 | value2 | valueN_2 / nameK: value1 | value2 | valueN_K`
+- *rating* - средний рейтинг товара
+- *feedback_quantity* - количество отзывов по товару
+- *category_id* - категория товара(таргет)
 
-**test.parquet** - файл идентичный **train.parquet**, но без реального *category_id*.
+`test.parquet` - файл идентичный `train.parquet`, но без реального *category_id*.
 Файлы *train* и *test* представленны в формате *parquet*.
 
 ### Метрики
